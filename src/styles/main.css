@@ -8,6 +8,8 @@
 	--secondary-dark: #1d5d83;
 	--black: #333745;
 	--white: #f5f5f8;
+	--huesera-summer: #e2a9f1;
+	--huesera-summer-text: #ffebfa;
 }
 
 * {
@@ -81,10 +83,25 @@ a {
 	margin: 0 10px;
 }
 
+.standard {
+	background: var(--secondary);
+	color: var(--primary-light);
+}
+.summer {
+	color: var(--huesera-summer-text);
+	background: var(--huesera-summer);
+}
+
 .button:hover {
-	background: var(--secondary-light);
 	box-shadow: 4px 4px 0 var(--black);
 	transform: translate(-2px, -2px);
+}
+.standard:hover {
+	background: var(--secondary-light);
+}
+.summer:hover {
+	background: var(--huesera-summer-text);
+	color: var(--huesera-summer);
 }
 
 /* ----- Sections ----- */
