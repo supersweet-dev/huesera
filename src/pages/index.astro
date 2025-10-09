@@ -9,62 +9,89 @@ import Arrabel from '../components/Arrabel.astro';
 		<div class="overlay">
 			<Logo color="var(--white)" />
 			<p class="tagline">pedacitos y piececitas</p>
+			<p class="description">
+				A virtual magazine featuring your news, art, and interests.
+			</p>
+
 			<div class="cta">
-				<a href="https://huesera.eo.page/" class="button standard"
-					>Subscribe</a
+				<a
+					href="https://huesera.eo.page/"
+					class="button standard"
+					target="_blank">Subscribe</a
 				>
+				<a href="/submissions" class="button standard" target="_blank"
+					>Submit Here</a
+				>
+				<a href="/archive" class="button standard">Archive</a>
 			</div>
 		</div>
 	</header>
 
 	<main>
-		<h1 class="issue-title">WE KNOW WHAT WE DID THIS SUMMER</h1>
+		<h1 class="issue-title halloween">TWISTED TALES FROM THE UNDERWORLD</h1>
 
 		<section class="intro">
-			<p>
-				Huesera is a project from Gem and Hideki to help our circle rely
-				less on social media for updates by creating a space to showcase
-				everyone's news, art, and interests.
-			</p>
 			<br />
-			<p><i>No quiero enterarme de nada hoy / así es el calor</i></p>
 			<p>
-				Our magazine debuts with a summer issue, closing out the season
-				with memories of rest and relaxation. Crazy trips, cross country
-				moves, amazing concerts, jokes that turn into traditions. Read
-				all about it here!
-			</p>
-			<div class="cta">
-				<a href="/issue-001" class="button summer">Read Here</a><a
-					href="https://github.com/supersweet-dev/huesera/releases/download/issue/001.pdf"
-					class="button summer">Download</a
-				><a
-					href="https://open.spotify.com/playlist/3PdZSECaujFTS5Jq6eJu0Q?si=No_IMV8qRNuPj6bg6AGv_g"
-					class="button summer">Playlist</a
+				<i
+					>Como un sueño de loco sin fin / la fortuna se ha reído de
+					ti</i
 				>
-			</div>
+			</p>
+			<p>
+				Hark! Witches circle the skies! A howl shatters the silence of
+				night! Spirits walk the earth! The veil thins, and our world
+				grows stranger. Here at Huesera we want to celebrate all things
+				paranatural and supernormal. This issue is dedicated to the
+				things that go bump in the night, to otherworldy visitors,
+				uncanny occurrences, and our colective fascination with the
+				bizarre and the unexplained. We want to hear your spooky
+				stories, real or imagined. We want to hear about your personal
+				experiences with witchcraft and spiritism. We want to see your
+				photos of orbs and apparitions. What are your favorite horror
+				movies? What's the scariest book you've ever read? Share with
+				us!
+			</p>
 		</section>
 
 		<section id="calls" class="calls">
 			<h2>Calls for Submissions</h2>
 			<h3 class="due">Deadline 11/08/2025</h3>
 			<p>
-				We're aiming to release the next issue in mid-November.
-				Submissions can range from a few sentences to include in our
-				compilations or a full multi-page article. Feel free to send in
-				multiple submissions! If you have any specific formatting
-				requests please let us know. Contributors will be sent a proof
-				of their sections on 11/10 for final approval and revisions.
+				We're aiming to release the next issue in mid-November. Feel
+				free to send in multiple submissions! If you have any specific
+				formatting requests please let us know. Contributors will be
+				sent a proof of their sections on 11/10 for final approval and
+				revisions.
 			</p>
-			<p>
-				Email submissions to
-				<a href="mailto:huesera@mapachillo.space"
-					>huesera@mapachillo.space</a
+			<div class="cta">
+				<a href="/submissions" class="button standard" target="_blank"
+					>Submit Here</a
 				>
-			</p>
+			</div>
 			<br />
+			<hr />
 			<article>
-				<h3>FEATURED - SCARY STORIES TO POST ONLINE</h3>
+				<h3>FEATURED - ALL OF THEM WITCHES</h3>
+				<p>
+					We want to know about your relationship with witchcraft and
+					what it means to you. Did you grow up in a witchy family? Do
+					you get cleanses or read tarot cards? Have you ever done a
+					spell? Do you think you've been cursed? Tell us all about
+					it!
+				</p>
+			</article>
+			<article>
+				<h3>FEATURED - FALLING FOR FALL</h3>
+				<p>
+					Last issue we said goodbye to summer, now we want to know
+					how you welcomed autumn! Did you go to the pumpkin patch?
+					Did you have your first PSL? Did you dress up for Halloween?
+					We want to see pictures and hear your stories.
+				</p>
+			</article>
+			<article>
+				<h3>FEATURED - MIDNIGHT CAMPFIRE</h3>
 				<p>
 					Has something paranormal ever happened to you? Ever seen a
 					specter? Felt a hand on your back? Maybe someone told you
@@ -75,7 +102,13 @@ import Arrabel from '../components/Arrabel.astro';
 			</article>
 			<article>
 				<h3>DARK AND STORMY TUNES</h3>
-				<p>Our Halloween playlist opens soon.</p>
+				<p>
+					<a
+						target="_blank"
+						href="https://open.spotify.com/playlist/0SJLXhWwHGIBiEVNkOspni?si=22Hvu7wqQgyBHJ7da1pPkA&pt=dc60e535e45de122e5a3abfca80414f0&pi=G5eGQ24ITyKab"
+						>Contribute to our Halloween playlist!</a
+					>
+				</p>
 			</article>
 
 			<article>
@@ -114,11 +147,9 @@ import Arrabel from '../components/Arrabel.astro';
 					news.
 				</p>
 			</article>
+			<hr />
 		</section>
-		<section class="media"><Arrabel color="var(--black)" /></section>
-	</main>
 
-	<footer>
-		<p>© 2025 Huesera</p>
-	</footer>
+		<section class="media"><Arrabel color="var(--white)" /></section>
+	</main>
 </BaseLayout>

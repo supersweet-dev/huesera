@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
+---
+
+<BaseLayout>
+	<header class="hero">
+		<div class="overlay">
+			<Logo color="var(--white)" />
+			<p class="tagline">magazine archive</p>
+
+			<div class="cta">
+				<a href="/" class="button standard">return</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="archive">
+			<div class="issue-card">
+				<p>September 2025</p>
+				<h1 class="issue-title summer">
+					WE KNOW WHAT WE DID THIS SUMMER
+				</h1>
+
+				<p>
+					<i>No quiero enterarme de nada hoy / así es el calor</i>
+				</p>
+				<p>
+					Our magazine debuts with a summer issue, closing out the
+					season with memories of rest and relaxation. Crazy trips,
+					cross country moves, amazing concerts, jokes that turn into
+					traditions. Read all about it here!
+				</p>
+				<div class="cta">
+					<a href="/issue-001" class="button summer">Read Here</a><a
+						href="https://github.com/supersweet-dev/huesera/releases/download/issue/001.pdf"
+						class="button summer">Download</a
+					><a
+						target="_blank"
+						href="https://open.spotify.com/playlist/3PdZSECaujFTS5Jq6eJu0Q?si=No_IMV8qRNuPj6bg6AGv_g"
+						class="button summer">Playlist</a
+					>
+				</div>
+			</div>
+		</section>
+	</main>
+</BaseLayout>
