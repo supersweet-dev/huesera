@@ -25,6 +25,11 @@ body {
 	line-height: 1.6;
 	background: var(--black);
 }
+.issue-001 {
+	background: var(--primary-light);
+	border-radius: 8px;
+	padding: 2rem;
+}
 a {
 	color: var(--secondary-dark);
 }
